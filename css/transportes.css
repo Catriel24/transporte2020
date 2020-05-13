@@ -1,0 +1,221 @@
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*Base*/
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        /*alto de linea - separacion entre linea y linea*/
+    }
+    
+    header {
+        background-color: #2e64a1;
+        padding: 1em 0;
+        width: 100%;
+        /*arriba-abajo - laterales*/
+    }
+    
+    header h1 {
+        color: white;
+        font-size: 2.5em;
+        font-style: italic;
+        font-weight: 100;
+        display: inline-block;
+        position: relative;
+        bottom: 0.8em;
+    }
+    
+    nav {
+        background-color: #6da9ed;
+        margin-bottom: 1em;
+        font-weight: ;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        width: 16.3%;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        padding: 0.2em 0.4em;
+    }
+    
+    nav ul li a.activo {
+        background-color: #4c76a5;
+    }
+    
+    nav ul li a:hover {
+        background-color: #4c76a5;
+    }
+    
+    footer {
+        background-color: #ccc;
+        clear: both;
+        color: #333;
+        padding: 3em 0;
+        text-align: center;
+        margin-top: 2em;
+    }
+    
+    .holder {
+        /* width: 960px; */
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        font-weight: 400;
+        color: #2e64a1;
+        margin: 0 0 1em;
+    }
+    
+    .left {
+        float: left;
+    }
+    
+    .right {
+        float: right;
+    }
+    /*termina base*/
+    
+    @media screen and (max-width: 768px) {
+        .holder {
+            max-width: 768px;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        nav ul li {
+            width: 16.1%;
+        }
+        .home .columnas .bienvenidos,
+        .home .columnas .testimonios {
+            width: 50%;
+        }
+        .nosotros .persona {
+            width: 30%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        .nosotros .persona:nth-child(3n+1) {
+            margin-left: 0;
+            border-color: blue;
+        }
+        .servicios .servicio figure,
+        .servicios .servicio .info {
+            box-sizing: border-box;
+        }
+        .servicios .servicio figure {
+            max-width: 22%;
+        }
+        .servicios .servicio figure img {
+            width: 100%;
+        }
+        .galeria .foto {
+            width: 24%;
+            margin: 1em 0 1em 1.3333%;
+            padding: 0.3em;
+        }
+        .galeria .foto:nth-child(5n+1) {
+            margin-left: 1.3333%;
+        }
+        .galeria .foto:nth-child(4n+1) {
+            margin-left: 0;
+            border-color: yellow;
+        }
+        .contacto .columna {
+            width: 100%;
+            float: none;
+            padding: 0 1em;
+        }
+        .contacto .columna.left {
+            border: none;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        header .logo {
+            margin-left: 1em;
+        }
+        header .logo h1 {
+            font-size: 2em;
+        }
+        nav .holder {
+            padding: 0;
+        }
+        nav ul li {
+            display: block;
+            width: auto;
+        }
+        .home .columnas .bienvenidos,
+        home .columnas .testimonios {
+            clear: both;
+            width: auto;
+            float: none;
+            display: block;
+        }
+        .home .columnas .bienvenidos {
+            padding: 0.6em;
+        }
+        .home .columnas .bienvenidos p {
+            font-size: 1em;
+        }
+        .nosotros .persona {
+            width: 48%;
+            margin-left: auto;
+            margin-bottom: 2%;
+        }
+        .nosotros .persona:nth-child(3n+1) {
+            margin-left: 2%;
+        }
+        .nosotros .persona:nth-child(2n+1) {
+            margin-left: 0;
+            border-color: green;
+        }
+        .servicios .servicio figure,
+        .servicios .servicio .info {
+            display: block;
+            float: none;
+            width: 100%;
+        }
+        .servicios .servicio figure {
+            max-width: 100%;
+            margin: 0 0 1em 0;
+        }
+        .galeria .foto {
+            width: 30%;
+            margin: 1em 0 1em 3.3333%;
+            padding: 0.3em;
+            background-color: yellow;
+        }
+        .galeria .foto:nth-child(5n+1) {
+            margin-left: 3.333%;
+        }
+        .galeria .foto:nth-child(4n+1) {
+            margin-left: 3.3333%;
+        }
+        .galeria .foto:nth-child(3n+1) {
+            margin-left: 0;
+            border-color: pink;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        header .logo {
+            text-align: center;
+            margin-left: 0;
+        }
+        header .logo h1 {
+            display: block;
+            position: static;
+        }
+    }

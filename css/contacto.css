@@ -1,0 +1,49 @@
+/*contacto inicio*/
+
+.columna {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.625em;
+}
+
+.columna.left {
+    border-right: 1px solid red;
+}
+
+.formulario label {
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    width: 80%;
+}
+
+.formulario textarea {
+    /* el texarea queda fijo y no se puede moficar, y no cambia el flujo del diseño */
+    height: 10em;
+    resize: none;
+}
+
+.formulario input[type="submit"] {
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1em;
+    padding: 0.4em 1em;
+    width: auto;
+}
+
+.formulario .acciones {
+    text-align: center;
+}
+
+
+/*contacto fin*/
